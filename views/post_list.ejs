@@ -7,6 +7,8 @@
     <% postList.results.forEach(function(post) {%>
         <li>
             <%= post.message %> - <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %>
+            <br>
+            <img alt = "post image" src = <%= post.imageUrl %> >
         </li>
     <% }); %>
 </ol>
