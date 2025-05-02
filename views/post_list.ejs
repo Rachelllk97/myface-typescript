@@ -11,7 +11,11 @@
             <br>
            Username: <%= post.postedBy.username %>
             <br>
-            <!-- <img alt = "post image" src = <%= post.imageUrl %> > -->
+            <img alt = "profile image" src = <%= post.postedBy.profileImageUrl %>>
+            <br>
+            <img alt = "post image" src = <%= post.imageUrl %> >
+            <br>
+           Liked by: <%= post.likedBy[0].username %>
         </li>
     <% }); %>
 </ol>
